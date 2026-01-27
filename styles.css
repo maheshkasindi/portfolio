@@ -823,6 +823,18 @@ section {
     gap: 2rem;
 }
 
+@media (max-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 .project-card {
     background: white;
     border-radius: 15px;
@@ -950,6 +962,10 @@ section {
 @media (max-width: 768px) {
     .skills-grid {
         grid-template-columns: 1fr;
+    }
+
+    .skill-category {
+        min-height: auto;
     }
 }
 
@@ -1307,6 +1323,11 @@ section {
 
     .nav-link::after {
         display: none;
+    }
+
+    .projects .container,
+    .skills .container {
+        max-width: 100%;
     }
 
     .hero-header-image {
