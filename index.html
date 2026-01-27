@@ -464,9 +464,19 @@
                 </div>
                 <button type="submit" class="btn btn-primary">Send Message</button>
             </form>
-            <div id="formMessage" class="form-message"></div>
         </div>
     </section>
+
+    <!-- Modal for form feedback -->
+    <div id="formModal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close">&times;</button>
+            <div class="modal-icon" id="modalIcon"></div>
+            <h3 class="modal-title" id="modalTitle"></h3>
+            <p class="modal-message" id="modalMessage"></p>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">

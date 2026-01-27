@@ -60,26 +60,42 @@ document.querySelectorAll('.project-card, .skill-category, .about-content').forE
 
 // Form submission with Web3Forms
 const contactForm = document.getElementById('contactForm');
-const formMessage = document.getElementById('formMessage');
+const formModal = document.getElementById('formModal');
+const modalIcon = document.getElementById('modalIcon');
+const modalTitle = document.getElementById('modalTitle');
+const modalMessage = document.getElementById('modalMessage');
+const modalClose = document.querySelector('.modal-close');
+const modalOverlay = document.querySelector('.modal-overlay');
 
-function showMessage(message, type) {
-    formMessage.textContent = message;
-    formMessage.className = `form-message show ${type}`;
-
-    // Auto-hide after 5 seconds
-    setTimeout(() => {
-        formMessage.classList.remove('show');
-    }, 5000);
+function showModal(title, message, type) {
+    modalIcon.className = `modal-icon ${type}`;
+    modalTitle.textContent = title;
+    modalMessage.textContent = message;
+    formModal.classList.add('show');
 }
+
+function hideModal() {
+    formModal.classList.remove('show');
+}
+
+// Close modal on button click
+modalClose.addEventListener('click', hideModal);
+
+// Close modal on overlay click
+modalOverlay.addEventListener('click', hideModal);
+
+// Close modal on escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && formModal.classList.contains('show')) {
+        hideModal();
+    }
+});
 
 contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     const submitButton = contactForm.querySelector('button[type="submit"]');
     const originalText = submitButton.textContent;
-
-    // Hide any previous messages
-    formMessage.classList.remove('show');
 
     // Show loading state
     submitButton.textContent = 'Sending...';
@@ -95,14 +111,26 @@ contactForm.addEventListener('submit', async (e) => {
         const data = await response.json();
 
         if (data.success) {
-            showMessage('Thank you for your message! I\'ll get back to you soon.', 'success');
+            showModal(
+                'Message Sent!',
+                'Thank you for reaching out! I\'ll get back to you soon.',
+                'success'
+            );
             contactForm.reset();
         } else {
-            showMessage('Oops! Something went wrong. Please try again or email me directly.', 'error');
+            showModal(
+                'Oops!',
+                'Something went wrong. Please try again or email me directly.',
+                'error'
+            );
         }
     } catch (error) {
         console.error('Form submission error:', error);
-        showMessage('Oops! Something went wrong. Please try again or email me directly.', 'error');
+        showModal(
+            'Oops!',
+            'Something went wrong. Please try again or email me directly.',
+            'error'
+        );
     } finally {
         // Reset button
         submitButton.textContent = originalText;
