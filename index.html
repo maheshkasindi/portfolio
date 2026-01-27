@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
     <!-- Global Background Animation -->
     <div class="bg-animation">
         <div class="bg-grid"></div>
@@ -302,8 +305,14 @@
             <h2 class="section-title">Technical Skills</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3 class="category-title">Frontend Development</h3>
+                    <h3 class="category-title">Frontend Dev</h3>
                     <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Bubble</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
                         <div class="skill-item">
                             <span class="skill-name">TypeScript</span>
                             <div class="skill-bar">
@@ -323,15 +332,15 @@
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-name">WeWeb</span>
+                            <span class="skill-name">Tailwind CSS</span>
                             <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
+                                <div class="skill-progress" data-progress="88"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-name">Bubble.io</span>
+                            <span class="skill-name">WeWeb</span>
                             <div class="skill-bar">
-                                <div class="skill-progress" data-progress="90"></div>
+                                <div class="skill-progress" data-progress="85"></div>
                             </div>
                         </div>
                     </div>
@@ -370,6 +379,12 @@
                                 <div class="skill-progress" data-progress="80"></div>
                             </div>
                         </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Google Cloud Run</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="83"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -392,6 +407,12 @@
                             <span class="skill-name">Vercel</span>
                             <div class="skill-bar">
                                 <div class="skill-progress" data-progress="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">DigitalOcean</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="82"></div>
                             </div>
                         </div>
                         <div class="skill-item">
@@ -434,6 +455,18 @@
                             <span class="skill-name">Docparser</span>
                             <div class="skill-bar">
                                 <div class="skill-progress" data-progress="82"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">OpenAI</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Whisper</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
                             </div>
                         </div>
                     </div>
@@ -508,6 +541,13 @@
             </div>
         </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 19V5M5 12l7-7 7 7"/>
+        </svg>
+    </button>
 
     <script src="script.js"></script>
 </body>

@@ -1,3 +1,55 @@
+// Scroll Progress Indicator
+const scrollProgress = document.getElementById('scrollProgress');
+
+function updateScrollProgress() {
+    const windowHeight = window.innerHeight;
+    const documentHeight = document.documentElement.scrollHeight - windowHeight;
+    const scrolled = window.pageYOffset;
+    const progress = (scrolled / documentHeight) * 100;
+    scrollProgress.style.width = progress + '%';
+}
+
+window.addEventListener('scroll', updateScrollProgress);
+
+// Back to Top Button
+const backToTopButton = document.getElementById('backToTop');
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 500) {
+        backToTopButton.classList.add('show');
+    } else {
+        backToTopButton.classList.remove('show');
+    }
+});
+
+backToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+// 3D Tilt Effect for Project Cards
+document.querySelectorAll('.project-card').forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+
+        const rotateX = (y - centerY) / 10;
+        const rotateY = (centerX - x) / 10;
+
+        card.style.transform = `translateY(-8px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+    });
+
+    card.addEventListener('mouseleave', () => {
+        card.style.transform = 'translateY(0) rotateX(0) rotateY(0)';
+    });
+});
+
 // Burger menu toggle
 const burgerMenu = document.getElementById('burgerMenu');
 const navMenu = document.getElementById('navMenu');
@@ -79,7 +131,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observe elements for animation
-document.querySelectorAll('.project-card, .skill-category, .about-content').forEach(el => {
+document.querySelectorAll('.project-card, .skill-category, .experience-item, .section-title, .contact-intro').forEach(el => {
     observer.observe(el);
 });
 
