@@ -352,6 +352,8 @@ body {
     border: 5px solid white;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
     transition: var(--transition);
+    position: relative;
+    z-index: 2;
 }
 
 .hero-header-image::before {
@@ -363,7 +365,7 @@ body {
     bottom: -10px;
     border-radius: 50%;
     background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
-    z-index: -1;
+    z-index: 0;
     animation: rotate 3s linear infinite;
 }
 
@@ -376,12 +378,55 @@ body {
     bottom: -8px;
     border-radius: 50%;
     background: white;
-    z-index: -1;
+    z-index: 1;
 }
 
 .hero-header-image:hover img {
     transform: scale(1.05);
     box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25);
+}
+
+/* Pulsing rings animation */
+.hero-header-image-wrapper {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.pulse-ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 180px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    opacity: 0;
+    animation: pulse 2s ease-out infinite;
+}
+
+.pulse-ring:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.pulse-ring:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.pulse-ring:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1.5);
+        opacity: 0;
+    }
 }
 
 @keyframes rotate {
@@ -954,6 +999,11 @@ section {
         margin-bottom: 1.5rem;
     }
 
+    .pulse-ring {
+        width: 150px;
+        height: 150px;
+    }
+
     .hero-title {
         font-size: 2.5rem;
     }
@@ -986,6 +1036,11 @@ section {
         width: 120px;
         height: 120px;
         margin-bottom: 1rem;
+    }
+
+    .pulse-ring {
+        width: 120px;
+        height: 120px;
     }
 
     .hero-title {
