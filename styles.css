@@ -809,9 +809,17 @@ section {
     backdrop-filter: blur(10px);
 }
 
+.projects {
+    background: transparent;
+}
+
+.projects .container {
+    max-width: 1400px;
+}
+
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     gap: 2rem;
 }
 
