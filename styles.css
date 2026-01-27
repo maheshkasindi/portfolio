@@ -837,6 +837,37 @@ section {
     width: 100%;
 }
 
+.form-message {
+    max-width: 600px;
+    margin: 2rem auto 0;
+    padding: 1.25rem 1.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    display: none;
+}
+
+.form-message.show {
+    opacity: 1;
+    transform: translateY(0);
+    display: block;
+}
+
+.form-message.success {
+    background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+    color: #065f46;
+    border: 1px solid #6ee7b7;
+}
+
+.form-message.error {
+    background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+    color: #991b1b;
+    border: 1px solid #fca5a5;
+}
+
 /* Footer */
 .footer {
     background: var(--text-dark);

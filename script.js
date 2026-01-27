@@ -60,11 +60,26 @@ document.querySelectorAll('.project-card, .skill-category, .about-content').forE
 
 // Form submission with Web3Forms
 const contactForm = document.getElementById('contactForm');
+const formMessage = document.getElementById('formMessage');
+
+function showMessage(message, type) {
+    formMessage.textContent = message;
+    formMessage.className = `form-message show ${type}`;
+
+    // Auto-hide after 5 seconds
+    setTimeout(() => {
+        formMessage.classList.remove('show');
+    }, 5000);
+}
+
 contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     const submitButton = contactForm.querySelector('button[type="submit"]');
     const originalText = submitButton.textContent;
+
+    // Hide any previous messages
+    formMessage.classList.remove('show');
 
     // Show loading state
     submitButton.textContent = 'Sending...';
@@ -80,14 +95,14 @@ contactForm.addEventListener('submit', async (e) => {
         const data = await response.json();
 
         if (data.success) {
-            alert('Thank you for your message! I will get back to you soon.');
+            showMessage('Thank you for your message! I\'ll get back to you soon.', 'success');
             contactForm.reset();
         } else {
-            alert('Oops! Something went wrong. Please try again or email me directly.');
+            showMessage('Oops! Something went wrong. Please try again or email me directly.', 'error');
         }
     } catch (error) {
         console.error('Form submission error:', error);
-        alert('Oops! Something went wrong. Please try again or email me directly.');
+        showMessage('Oops! Something went wrong. Please try again or email me directly.', 'error');
     } finally {
         // Reset button
         submitButton.textContent = originalText;
