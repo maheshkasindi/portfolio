@@ -1,15 +1,8 @@
 <svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1" />
-    </linearGradient>
-  </defs>
+  <!-- Background -->
+  <rect width="64" height="64" fill="#ffffff"/>
 
-  <!-- Background Circle -->
-  <circle cx="32" cy="32" r="32" fill="url(#bgGradient)"/>
-
-  <!-- Letter M. (stylish, italic, light) -->
+  <!-- Letter M. (stylish, italic, light - matching header) -->
   <text
     x="32"
     y="35"
@@ -18,7 +11,7 @@
     font-weight="300"
     font-style="italic"
     letter-spacing="2"
-    fill="#ffffff"
+    fill="#1f2937"
     text-anchor="middle"
     dominant-baseline="central">
     M.
