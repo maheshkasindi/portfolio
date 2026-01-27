@@ -9,16 +9,18 @@
   <!-- Background Circle -->
   <circle cx="32" cy="32" r="32" fill="url(#bgGradient)"/>
 
-  <!-- Letter M -->
+  <!-- Letter M. (stylish, italic, light) -->
   <text
     x="32"
-    y="32"
+    y="35"
     font-family="Arial, sans-serif"
-    font-size="36"
-    font-weight="700"
+    font-size="32"
+    font-weight="300"
+    font-style="italic"
+    letter-spacing="2"
     fill="#ffffff"
     text-anchor="middle"
     dominant-baseline="central">
-    M
+    M.
   </text>
 </svg>
