@@ -1113,6 +1113,7 @@ section {
 
     .form-row {
         grid-template-columns: 1fr;
+        gap: 0;
     }
 
     .section-title {
