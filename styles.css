@@ -833,6 +833,14 @@ section {
     .projects-grid {
         grid-template-columns: 1fr;
     }
+
+    .featured-badge {
+        top: 20px;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+    }
 }
 
 .project-card {
