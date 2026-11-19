@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=20261119f">
 </head>
 <body>
     <!-- Scroll Progress Indicator -->
@@ -52,10 +52,6 @@
                 </div>
             </div>
 
-            <div class="availability-badge reveal">
-                <span class="pulse-dot"></span>
-                Available for projects
-            </div>
 
             <h1 class="hero-title">
                 <span class="hero-greeting">Hi, I'm</span>
@@ -88,49 +84,47 @@
                 </div>
                 <div class="stat-divider"></div>
                 <div class="stat">
-                    <span class="stat-number" data-count="15" data-suffix="+">0</span>
-                    <span class="stat-label">Projects Shipped</span>
+                    <span class="stat-number" data-count="20" data-suffix="+">0</span>
+                    <span class="stat-label">Products Shipped</span>
                 </div>
                 <div class="stat-divider"></div>
                 <div class="stat">
-                    <span class="stat-number" data-count="3" data-suffix="+">0</span>
+                    <span class="stat-number" data-count="4" data-suffix="">0</span>
                     <span class="stat-label">Countries Served</span>
                 </div>
             </div>
         </div>
 
-        <a href="#about" class="scroll-indicator" aria-label="Scroll down">
-            <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
-        </a>
     </section>
 
-    <!-- Tech Marquee -->
-    <div class="marquee" aria-hidden="true">
-        <div class="marquee-track">
-            <span>Next.js</span><span class="marquee-dot">✦</span>
-            <span>TypeScript</span><span class="marquee-dot">✦</span>
-            <span>React</span><span class="marquee-dot">✦</span>
-            <span>Supabase</span><span class="marquee-dot">✦</span>
-            <span>PostgreSQL</span><span class="marquee-dot">✦</span>
-            <span>AWS</span><span class="marquee-dot">✦</span>
-            <span>Claude API</span><span class="marquee-dot">✦</span>
-            <span>Stripe</span><span class="marquee-dot">✦</span>
-            <span>Shopify</span><span class="marquee-dot">✦</span>
-            <span>Docker</span><span class="marquee-dot">✦</span>
-            <span>Vercel</span><span class="marquee-dot">✦</span>
-            <span>Tailwind CSS</span><span class="marquee-dot">✦</span>
-            <span>Next.js</span><span class="marquee-dot">✦</span>
-            <span>TypeScript</span><span class="marquee-dot">✦</span>
-            <span>React</span><span class="marquee-dot">✦</span>
-            <span>Supabase</span><span class="marquee-dot">✦</span>
-            <span>PostgreSQL</span><span class="marquee-dot">✦</span>
-            <span>AWS</span><span class="marquee-dot">✦</span>
-            <span>Claude API</span><span class="marquee-dot">✦</span>
-            <span>Stripe</span><span class="marquee-dot">✦</span>
-            <span>Shopify</span><span class="marquee-dot">✦</span>
-            <span>Docker</span><span class="marquee-dot">✦</span>
-            <span>Vercel</span><span class="marquee-dot">✦</span>
-            <span>Tailwind CSS</span><span class="marquee-dot">✦</span>
+    <!-- Companies Marquee -->
+    <div class="brands">
+        <p class="brands-label">Companies I've worked with</p>
+        <div class="brands-track-wrap" aria-hidden="true">
+            <div class="brands-track">
+                <div class="brands-set">
+                    <img src="brands/TravelPaymentSolutions.svg" alt="Travel Payment Solutions" loading="lazy">
+                    <img src="brands/VectraView.svg" alt="VectraView" loading="lazy">
+                    <img src="brands/Bench.avif" alt="Bench" loading="lazy">
+                    <img src="brands/Pentaskill.avif" alt="Pentaskill" loading="lazy">
+                    <img src="brands/Contour.avif" alt="Contour" loading="lazy">
+                    <img src="brands/Wheeler.avif" alt="Wheeler" loading="lazy">
+                    <img src="brands/Instabook.png" alt="Instabook" class="brand-invert" loading="lazy">
+                    <img src="brands/Bonding.png" alt="Bonding Solutions" loading="lazy">
+                    <img src="brands/Cappelendimyr.avif" alt="Cappelendimyr" class="brand-small" loading="lazy">
+                </div>
+                <div class="brands-set">
+                    <img src="brands/TravelPaymentSolutions.svg" alt="" loading="lazy">
+                    <img src="brands/VectraView.svg" alt="" loading="lazy">
+                    <img src="brands/Bench.avif" alt="" loading="lazy">
+                    <img src="brands/Pentaskill.avif" alt="" loading="lazy">
+                    <img src="brands/Contour.avif" alt="" loading="lazy">
+                    <img src="brands/Wheeler.avif" alt="" loading="lazy">
+                    <img src="brands/Instabook.png" alt="" class="brand-invert" loading="lazy">
+                    <img src="brands/Bonding.png" alt="" loading="lazy">
+                    <img src="brands/Cappelendimyr.avif" alt="" class="brand-small" loading="lazy">
+                </div>
+            </div>
         </div>
     </div>
 
@@ -144,33 +138,66 @@
             <div class="about-content">
                 <div class="about-text reveal">
                     <p class="about-intro">
-                        Full-stack developer with <mark>5+ years of experience</mark> building SaaS platforms, internal tools, and AI-powered applications.
+                        Full Stack AI Engineer with <mark>5+ years of experience</mark> turning ideas into AI-native products, from the first commit to production.
                     </p>
                     <p>
-                        I build products end-to-end — from <mark>Next.js</mark> and <mark>React</mark> frontends to <mark>Supabase</mark> and <mark>PostgreSQL</mark> backends, with cloud infrastructure on AWS and Vercel.
-                        Recent work includes a Shopify ERP dashboard, an AI-powered document analysis platform using Claude API, and a loan management system with dynamic forms and multilingual support.
+                        I've built SaaS platforms, marketplaces, internal tools, and AI products for startups and businesses across the Americas, Europe, and India, in areas like real estate, restaurants, healthcare, e-commerce, fintech, and compliance.
+                        I like owning a product end to end: finding the problem, shipping fast, and staying with it as it grows.
                     </p>
                     <p>
-                        I integrate <mark>AI into real workflows</mark>, ship fast with TypeScript and modern frameworks, and handle everything from Stripe billing to HIPAA-compliant AWS deployments.
+                        I work mostly with <mark>Next.js</mark>, <mark>TypeScript</mark>, and <mark>Postgres</mark>, and I build <mark>AI into real workflows</mark> with Claude, the AI SDK, and MCP. That covers data extraction, AI-led interviews, and agent-ready APIs, plus Stripe billing and HIPAA-compliant AWS deployments.
                         Open to consulting, contract projects, and product collaborations.
                     </p>
                 </div>
                 <div class="about-cards">
-                    <div class="about-card reveal" data-spotlight>
-                        <div class="about-card-icon">⚡</div>
-                        <h3>End-to-End Delivery</h3>
-                        <p>From design to deployment — frontend, backend, database, and infra handled in one place.</p>
-                    </div>
-                    <div class="about-card reveal" data-spotlight>
-                        <div class="about-card-icon">🤖</div>
-                        <h3>AI-Native Products</h3>
-                        <p>Claude API, OpenAI, and Whisper wired into real business workflows, not demos.</p>
-                    </div>
-                    <div class="about-card reveal" data-spotlight>
-                        <div class="about-card-icon">🔒</div>
-                        <h3>Production Grade</h3>
-                        <p>HIPAA-compliant AWS setups, Stripe billing, CI/CD pipelines, and monitoring.</p>
-                    </div>
+                    <article class="about-card reveal" data-spotlight>
+                        <div class="about-card-top">
+                            <div class="about-card-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                            </div>
+                            <span class="about-card-index">01</span>
+                        </div>
+                        <h3>Idea to Production</h3>
+                        <p>I take a product from a blank repo to real users: scoping, design, frontend, backend, data, and launch, all handled by one person.</p>
+                        <ul class="about-card-chips">
+                            <li>Product scoping</li>
+                            <li>UI/UX</li>
+                            <li>Full stack</li>
+                            <li>Launch</li>
+                        </ul>
+                    </article>
+                    <article class="about-card reveal" data-spotlight>
+                        <div class="about-card-top">
+                            <div class="about-card-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg>
+                            </div>
+                            <span class="about-card-index">02</span>
+                        </div>
+                        <h3>AI at the Core</h3>
+                        <p>AI that does real work in the product, not a demo bolted on later: data extraction, AI-led interviews, and APIs that AI agents can use.</p>
+                        <ul class="about-card-chips">
+                            <li>Claude</li>
+                            <li>AI SDK</li>
+                            <li>MCP</li>
+                            <li>OpenAI</li>
+                        </ul>
+                    </article>
+                    <article class="about-card reveal" data-spotlight>
+                        <div class="about-card-top">
+                            <div class="about-card-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5.5 3.4 9.7 8 11 4.6-1.3 8-5.5 8-11V5l-8-3z"/></svg>
+                            </div>
+                            <span class="about-card-index">03</span>
+                        </div>
+                        <h3>Built to Last</h3>
+                        <p>Infrastructure, billing, and monitoring that hold up under real traffic, including HIPAA-compliant setups for healthcare clients.</p>
+                        <ul class="about-card-chips">
+                            <li>AWS</li>
+                            <li>Stripe</li>
+                            <li>Postgres</li>
+                            <li>CI/CD</li>
+                        </ul>
+                    </article>
                 </div>
             </div>
         </div>
@@ -188,27 +215,52 @@
                     <div class="timeline-marker"><span class="timeline-dot"></span></div>
                     <div class="experience-content" data-spotlight>
                         <div class="experience-header">
-                            <span class="date-badge current">Feb 2026 — Present</span>
-                            <h3 class="experience-title">Founder &amp; Full Stack Developer</h3>
-                            <p class="experience-company">DevMahesh <span class="experience-location">· Remote</span></p>
+                            <span class="date-badge current">Oct 2026 — Present</span>
+                            <h3 class="experience-title">Full Stack AI Engineer · Founding Team</h3>
+                            <p class="experience-company"><span class="company-logo"><img src="brands/TPS-mark.svg" alt="" loading="lazy"></span>Travel Payment Solutions LLC <span class="experience-location">· Bengaluru, Onsite · US based</span></p>
                         </div>
                         <ul class="experience-description">
-                            <li>Founded a solo dev agency building full-stack web apps, SaaS platforms, and internal tools for clients across healthcare, e-commerce, and fintech</li>
-                            <li>Built products like Klinici (clinic management), Freel (freelance platform), Earph (Shopify ERP), Bench Equity (loan management), Deal Nexa (AI document analysis), and VectraView using Next.js, Supabase, and Claude API</li>
-                            <li>Managed AWS infrastructure — EC2, HIPAA-compliant VPC, RDS Postgres, S3, Docker deployments, and patient portals for healthcare clients</li>
-                            <li>Integrated Stripe payments, Shopify webhooks, Resend emails, and AI-powered features across multiple client projects</li>
+                            <li>Founding engineer on a small product team that spots business opportunities and turns them into AI-native products, owning each app end to end, from first commit to production</li>
+                            <li>Shipped <a href="https://www.menuready.ai" target="_blank" rel="noopener noreferrer">MenuReady.ai</a>, which turns a photo of a restaurant's menu or its website into a TV menu board designed by AI. Built menu extraction with Claude and OpenAI, Stripe subscriptions, and Supabase auth and storage</li>
+                            <li>Now building <a href="https://www.frontierfound.com" target="_blank" rel="noopener noreferrer">FrontierFound</a>, a real estate marketplace for Patagonia with an AI intelligence layer. It gathers scattered market data into structured listings and insights, runs AI-led agent onboarding interviews, and offers an MCP server so AI assistants can query listings</li>
+                            <li>Built agent and brokerage dashboards, automated market crawls and data imports, and AI screening of agent answers, using Next.js, Payload CMS, and Postgres on Vercel</li>
                         </ul>
                         <div class="experience-tags">
                             <span class="tag">Next.js</span>
                             <span class="tag">TypeScript</span>
-                            <span class="tag">React</span>
-                            <span class="tag">Supabase</span>
-                            <span class="tag">AWS</span>
                             <span class="tag">Claude API</span>
+                            <span class="tag">AI SDK</span>
+                            <span class="tag">MCP</span>
+                            <span class="tag">Payload CMS</span>
+                            <span class="tag">Postgres</span>
+                            <span class="tag">Supabase</span>
                             <span class="tag">Stripe</span>
-                            <span class="tag">Shopify API</span>
-                            <span class="tag">Docker</span>
                             <span class="tag">Vercel</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-item reveal">
+                    <div class="timeline-marker"><span class="timeline-dot"></span></div>
+                    <div class="experience-content" data-spotlight>
+                        <div class="experience-header">
+                            <span class="date-badge">Feb 2026 — Nov 2026</span>
+                            <h3 class="experience-title">Senior Software Engineer, Growth and Platform</h3>
+                            <p class="experience-company"><span class="company-logo company-logo--light"><img src="brands/VectraView-mark.svg" alt="" loading="lazy"></span>VectraView <span class="experience-location">· Remote, US based · Promoted from Software Engineer, Oct 2026</span></p>
+                        </div>
+                        <ul class="experience-description">
+                            <li>Building an AI-powered GRC platform that unifies risk, compliance, and audit management in one place, with automation and expert-ready workflows</li>
+                            <li>Developed dashboards and reporting for enterprise-grade visibility — vendor risk scoring, risk-band visualizations, and clear audit-ready reporting for CISOs and security teams</li>
+                            <li>Contributed across the platform and advisor-facing tooling to reduce manual work and accelerate client assessments, supporting growth and scalability</li>
+                        </ul>
+                        <div class="experience-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Bubble</span>
+                            <span class="tag">AI/LLM</span>
+                            <span class="tag">n8n</span>
+                            <span class="tag">Notion</span>
+                            <span class="tag">REST API</span>
+                            <span class="tag">Dashboards</span>
                         </div>
                     </div>
                 </div>
@@ -219,7 +271,7 @@
                         <div class="experience-header">
                             <span class="date-badge">May 2022 — Jan 2026</span>
                             <h3 class="experience-title">Full Stack Developer (Contract)</h3>
-                            <p class="experience-company">Contour <span class="experience-location">· Remote, US based</span></p>
+                            <p class="experience-company"><span class="company-logo company-logo--light"><img src="brands/Contour-mark.svg" alt="" loading="lazy"></span>Contour <span class="experience-location">· Remote, US based</span></p>
                         </div>
                         <ul class="experience-description">
                             <li>Built internal tools for operations teams using React, Node.js, TypeScript, Bubble, WeWeb, and Supabase</li>
@@ -247,7 +299,7 @@
                         <div class="experience-header">
                             <span class="date-badge">Oct 2021 — Jul 2025</span>
                             <h3 class="experience-title">Bubble Developer (Freelance)</h3>
-                            <p class="experience-company">Cappelendimyr <span class="experience-location">· Remote, Norway based</span></p>
+                            <p class="experience-company"><span class="company-logo company-logo--tight"><img src="brands/Cappelendimyr-mark.png" alt="" loading="lazy"></span>Cappelendimyr <span class="experience-location">· Remote, Norway based</span></p>
                         </div>
                         <ul class="experience-description">
                             <li>Built inventory management system used internally for tracking and operations</li>
@@ -272,7 +324,7 @@
                         <div class="experience-header">
                             <span class="date-badge">Jun 2021 — May 2022</span>
                             <h3 class="experience-title">Bubble Developer (Contract)</h3>
-                            <p class="experience-company">Savd Technologies <span class="experience-location">· Remote, Mexico based</span></p>
+                            <p class="experience-company"><span class="company-logo"><img src="brands/Savd-mark.svg" alt="" loading="lazy"></span>Savd Technologies <span class="experience-location">· Remote, Mexico based</span></p>
                         </div>
                         <ul class="experience-description">
                             <li>Built a food delivery app for reusable containers from scratch</li>
@@ -320,37 +372,37 @@
                 </div>
 
                 <div class="project-card reveal" data-spotlight data-tilt>
-                    <div class="project-image" style="background-image: url('freel-preview.jpg');">
+                    <div class="project-image" style="background-image: url('frontierfound.jpg');">
                         <div class="project-overlay">
-                            <a href="https://usefreel.com" target="_blank" rel="noopener noreferrer" class="project-link">Visit Site ↗</a>
+                            <a href="https://www.frontierfound.com" target="_blank" rel="noopener noreferrer" class="project-link">Visit Site ↗</a>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3 class="project-title">Freel — Freelance Platform</h3>
+                        <h3 class="project-title">FrontierFound</h3>
                         <p class="project-description">
-                            Comprehensive SaaS platform for freelance developers to manage projects, track time, generate invoices, and showcase portfolios. Built with serverless architecture, real-time database, and AI-powered development workflow.
+                            Real estate marketplace for Patagonia, covering homes, land, and commercial property across Argentina and Chile. Every price shows when its agent last confirmed it. AI interviews agents during onboarding and turns scattered market data into structured listings, and an MCP server lets AI assistants search listings directly.
                         </p>
                         <div class="project-tags">
-                            <span class="tag">Next.js 15</span>
+                            <span class="tag">Next.js</span>
                             <span class="tag">TypeScript</span>
-                            <span class="tag">Supabase</span>
-                            <span class="tag">AWS Lambda</span>
-                            <span class="tag">Vercel</span>
-                            <span class="tag">Tailwind CSS</span>
+                            <span class="tag">Payload CMS</span>
+                            <span class="tag">Postgres</span>
+                            <span class="tag">Claude API</span>
+                            <span class="tag">MCP</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="project-card reveal" data-spotlight data-tilt>
-                    <div class="project-image" style="background-image: url('earph.jpg');">
+                    <div class="project-image" style="background-image: url('earpi.jpg');">
                         <div class="project-overlay">
-                            <a href="https://nobroadband.com" target="_blank" rel="noopener noreferrer" class="project-link">Visit Site ↗</a>
+                            <a href="https://earpi.io" target="_blank" rel="noopener noreferrer" class="project-link">Visit Site ↗</a>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3 class="project-title">Earph</h3>
+                        <h3 class="project-title">Earpi</h3>
                         <p class="project-description">
-                            Shopify ERP dashboard that syncs orders, products, inventory, and customers in real time. Features AI-powered queries, PDF invoicing, and Stripe billing.
+                            ERP for Shopify merchants that turns store data into purchasing, invoicing, and B2B sales. It syncs orders, variants, inventory, customers, and fulfilments live from Shopify, tracks stock per variant, and generates purchase orders and invoices automatically.
                         </p>
                         <div class="project-tags">
                             <span class="tag">Next.js 14</span>
@@ -428,7 +480,7 @@
                 </div>
 
                 <div class="project-card reveal" data-spotlight data-tilt>
-                    <div class="project-image" style="background-image: url('prepwork.jpg');">
+                    <div class="project-image" style="background-image: url('prepwork-new.jpg');">
                         <div class="project-overlay">
                             <a href="https://prepwork.io" target="_blank" rel="noopener noreferrer" class="project-link">Visit Site ↗</a>
                         </div>
@@ -436,7 +488,7 @@
                     <div class="project-info">
                         <h3 class="project-title">Prepwork</h3>
                         <p class="project-description">
-                            Food delivery platform for home chefs in the US. Automates orders, payments, subscriptions, and customer communication for meal prep businesses.
+                            Meal prep software that runs delivery day for kitchens of every size. Handles orders, subscriptions, production counts for each meal, driver routes, and customer texts in one app, with each kitchen getting its own online store.
                         </p>
                         <div class="project-tags">
                             <span class="tag">Bubble</span>
@@ -482,121 +534,121 @@
             </div>
             <div class="skills-grid">
                 <div class="skill-category reveal" data-spotlight>
-                    <h3 class="category-title">Frontend Dev</h3>
+                    <h3 class="category-title">Frontend</h3>
                     <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-head"><span class="skill-name">Next.js</span><span class="skill-percent">92%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="92"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-head"><span class="skill-name">React</span><span class="skill-percent">92%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="92"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-head"><span class="skill-name">TypeScript</span><span class="skill-percent">92%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="92"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-head"><span class="skill-name">Tailwind CSS</span><span class="skill-percent">90%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-head"><span class="skill-name">Recharts</span><span class="skill-percent">88%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="88"></div></div>
+                        </div>
                         <div class="skill-item">
                             <div class="skill-head"><span class="skill-name">Bubble</span><span class="skill-percent">90%</span></div>
                             <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
                         </div>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal" data-spotlight>
+                    <h3 class="category-title">Backend &amp; Data</h3>
+                    <div class="skill-items">
                         <div class="skill-item">
-                            <div class="skill-head"><span class="skill-name">TypeScript</span><span class="skill-percent">90%</span></div>
+                            <div class="skill-head"><span class="skill-name">Node.js</span><span class="skill-percent">88%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="88"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-head"><span class="skill-name">PostgreSQL</span><span class="skill-percent">88%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="88"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-head"><span class="skill-name">Supabase</span><span class="skill-percent">90%</span></div>
                             <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-head"><span class="skill-name">JavaScript</span><span class="skill-percent">92%</span></div>
+                            <div class="skill-head"><span class="skill-name">Payload CMS</span><span class="skill-percent">85%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-head"><span class="skill-name">REST APIs</span><span class="skill-percent">92%</span></div>
                             <div class="skill-bar"><div class="skill-progress" data-progress="92"></div></div>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-head"><span class="skill-name">HTML/CSS</span><span class="skill-percent">95%</span></div>
-                            <div class="skill-bar"><div class="skill-progress" data-progress="95"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-head"><span class="skill-name">Tailwind CSS</span><span class="skill-percent">88%</span></div>
-                            <div class="skill-bar"><div class="skill-progress" data-progress="88"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-head"><span class="skill-name">WeWeb</span><span class="skill-percent">85%</span></div>
+                            <div class="skill-head"><span class="skill-name">Python</span><span class="skill-percent">85%</span></div>
                             <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
                         </div>
                     </div>
                 </div>
 
                 <div class="skill-category reveal" data-spotlight>
-                    <h3 class="category-title">Backend &amp; Database</h3>
+                    <h3 class="category-title">AI &amp; Agents</h3>
                     <div class="skill-items">
                         <div class="skill-item">
-                            <div class="skill-head"><span class="skill-name">Python</span><span class="skill-percent">88%</span></div>
+                            <div class="skill-head"><span class="skill-name">Claude API</span><span class="skill-percent">92%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="92"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-head"><span class="skill-name">Vercel AI SDK</span><span class="skill-percent">88%</span></div>
                             <div class="skill-bar"><div class="skill-progress" data-progress="88"></div></div>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-head"><span class="skill-name">SQL</span><span class="skill-percent">85%</span></div>
+                            <div class="skill-head"><span class="skill-name">MCP</span><span class="skill-percent">85%</span></div>
                             <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-head"><span class="skill-name">Supabase</span><span class="skill-percent">87%</span></div>
-                            <div class="skill-bar"><div class="skill-progress" data-progress="87"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-head"><span class="skill-name">REST API</span><span class="skill-percent">90%</span></div>
-                            <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-head"><span class="skill-name">Wasabi</span><span class="skill-percent">80%</span></div>
-                            <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-head"><span class="skill-name">Google Cloud Run</span><span class="skill-percent">83%</span></div>
-                            <div class="skill-bar"><div class="skill-progress" data-progress="83"></div></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category reveal" data-spotlight>
-                    <h3 class="category-title">DevOps &amp; Tools</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-head"><span class="skill-name">Git</span><span class="skill-percent">93%</span></div>
-                            <div class="skill-bar"><div class="skill-progress" data-progress="93"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-head"><span class="skill-name">CI/CD</span><span class="skill-percent">80%</span></div>
-                            <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-head"><span class="skill-name">Vercel</span><span class="skill-percent">88%</span></div>
-                            <div class="skill-bar"><div class="skill-progress" data-progress="88"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-head"><span class="skill-name">DigitalOcean</span><span class="skill-percent">82%</span></div>
-                            <div class="skill-bar"><div class="skill-progress" data-progress="82"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-head"><span class="skill-name">Jira</span><span class="skill-percent">85%</span></div>
-                            <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-head"><span class="skill-name">Agile</span><span class="skill-percent">90%</span></div>
-                            <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category reveal" data-spotlight>
-                    <h3 class="category-title">Integrations &amp; APIs</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-head"><span class="skill-name">Stripe</span><span class="skill-percent">90%</span></div>
-                            <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-head"><span class="skill-name">Postmark</span><span class="skill-percent">85%</span></div>
-                            <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-head"><span class="skill-name">Twilio</span><span class="skill-percent">88%</span></div>
-                            <div class="skill-bar"><div class="skill-progress" data-progress="88"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-head"><span class="skill-name">Docparser</span><span class="skill-percent">82%</span></div>
-                            <div class="skill-bar"><div class="skill-progress" data-progress="82"></div></div>
                         </div>
                         <div class="skill-item">
                             <div class="skill-head"><span class="skill-name">OpenAI</span><span class="skill-percent">90%</span></div>
                             <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-head"><span class="skill-name">Whisper</span><span class="skill-percent">85%</span></div>
+                            <div class="skill-head"><span class="skill-name">Claude Code</span><span class="skill-percent">93%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="93"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-head"><span class="skill-name">Prompt Engineering</span><span class="skill-percent">90%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal" data-spotlight>
+                    <h3 class="category-title">Cloud &amp; Integrations</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-head"><span class="skill-name">Vercel</span><span class="skill-percent">92%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="92"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-head"><span class="skill-name">AWS</span><span class="skill-percent">85%</span></div>
                             <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-head"><span class="skill-name">Docker</span><span class="skill-percent">80%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-head"><span class="skill-name">Stripe</span><span class="skill-percent">90%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-head"><span class="skill-name">Resend / Postmark</span><span class="skill-percent">87%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="87"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-head"><span class="skill-name">CI/CD</span><span class="skill-percent">82%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="82"></div></div>
                         </div>
                     </div>
                 </div>
@@ -683,6 +735,6 @@
         </svg>
     </button>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=20261119"></script>
 </body>
 </html>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <text
+    x="100"
+    y="130"
+    text-anchor="middle"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
+    font-size="100"
+    font-weight="300"
+    font-style="italic"
+    letter-spacing="6"
+    fill="#1f2937"
+  >M.</text>
+</svg>
